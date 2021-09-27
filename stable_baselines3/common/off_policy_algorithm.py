@@ -595,7 +595,7 @@ class OffPolicyAlgorithm(BaseAlgorithm):
                 else:
                     action, buffer_action = self._sample_action(learning_starts, action_noise)
                     new_obs, reward, done, infos = env.step(action)
-                    reward = 0
+                    #reward = 0
 
                 # Rescale and perform action
 
