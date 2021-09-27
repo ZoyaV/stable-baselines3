@@ -139,4 +139,6 @@ class DDPG(TD3):
             tb_log_name=tb_log_name,
             eval_log_path=eval_log_path,
             reset_num_timesteps=reset_num_timesteps,
+            imitation = imitation,
+            imitation_action = imitation_action
         )
