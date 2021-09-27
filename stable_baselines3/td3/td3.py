@@ -213,6 +213,8 @@ class TD3(OffPolicyAlgorithm):
             tb_log_name=tb_log_name,
             eval_log_path=eval_log_path,
             reset_num_timesteps=reset_num_timesteps,
+            imitation=imitation,
+            imitation_action=imitation_action
         )
 
     def _excluded_save_params(self) -> List[str]:
