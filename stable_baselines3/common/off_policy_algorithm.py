@@ -589,7 +589,7 @@ class OffPolicyAlgorithm(BaseAlgorithm):
 
                 # Select action randomly or according to policy
                 if imitation:
-                    action, buffer_action = imitation_action()
+                    action, buffer_action = self.scale_action(imitation_action())
                     new_obs, reward, done, infos = env.step(action)
                     reward = 1
                 else:
